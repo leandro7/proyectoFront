@@ -76,18 +76,6 @@ footer{
     width: 100%;
 
 }
-
-/*Propiedades del header*/
-.controlMenu{
-    display: none;
-}
-
-.mediaCell{
-    display: none;
-}
-
-
-
 /* Propiedades de la seccion nuevo */
 .news .movie{
             display: flex;
@@ -143,7 +131,7 @@ footer{
     }
 
 
-}/*Propiedades de la seccion series y peliculas*/
+/*Propiedades de la seccion series y peliculas*/
 .imageCarousel{
     max-width: 100%;
     width: auto;
