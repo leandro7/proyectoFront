@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+    integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+  <!-- CSS personalizado -->
+  <link rel="stylesheet" href="css/style.css">
+  <title>Proyecto</title>
+</head>
+
+<body>
+  <header>
+    <h3>PelisMas</h3>
+    <!-- nav modo mobile -->
+    <!-- nav modo desktop -->
+    <nav class="nav nav-pills flex-column flex-sm-row mediaDesktop">     
+      <a class="flex-sm-fill text-sm-center nav-link active" href="#news">Novedades</a>
+      <a class="flex-sm-fill text-sm-center nav-link" href="#trends">Tendencias</a>
+      <a class="flex-sm-fill text-sm-center nav-link" href="#series">Series</a>
+      <a class="flex-sm-fill text-sm-center nav-link" href="#movies">Películas</a>
+      <a class="flex-sm-fill text-sm-center nav-link" href="#contact">Contacto</a>
+    </nav>
+  </header>
+  <main class="principal">
+    <h1 class="dSection">Ultimas tendencias en series y películas</h1>
+    <div id="news" class="news">
+      <div class="movie">
+        <img src="img/novedades/el_robo.jpg" class="image" alt="el robo del siglo">
+      </div>
+      <div class="description">
+        <h4>El Robo del siglo</h4>
+        <p class="small text-secondary ">La primera gran película nacional del año tiene las dosis exactas de género y argentinismos
+          como para robar los corazones de los espectadores. Después de todo, es “solo plata, no amores”.Alexis Puig</p>
+        <p class="text-dark">Basado en una historia real, del robo de la sucursal del Banco Río de la localidad bonaerense de Acassuso el
+          13 de enero de 2006,la cual fue asaltada por una banda de seis ladrones armados con armas de juguete.Tomaron
+          23 rehenes y se llevaron 15 millones de dólares de 147 cajas de seguridad que abandonaron posteriormente tras
+          la huida.​</p>
+        <ul class="list">
+          <li class="text-info">Policial</li>
+          <li class="text-info">Atrapante</li>
+          <li class="text-info">Real</li>
+        </ul>
+      </div>
+    </div>
+    <h3 class="dSection" id="trends">Tendencias</h3>
+    <div class="trends">
+      <div class="trendBox">
+        <h4 class="trendTitle">#1</h4>
+        <div class="card cardStyle">
+          <img src="img/tendencias/dark.jpg" class="card-img-top fixed" alt="portada dark">
+          <div class="card-body">
+            <h5 class="card-title">Dark</h5>
+            <a href="https://www.youtube.com/watch?v=z2wPBG-GSJ0" class="btn btn-primary " target="_blank">Ver
+              Trailer</a>
+          </div>
+        </div>
+      </div>
+      <div class="trendBox">
+        <h4 class="trendTitle">#2</h4>
+        <div class="card cardStyle">
+          <img src="img/tendencias/vikingos.jpg" class="card-img-top fixed" alt="portada vikingos">
+          <div class="card-body">
+            <h5 class="card-title">Vikingos</h5>
+            <a href="https://www.youtube.com/watch?v=R2glA8Ik2dM" class="btn btn-primary" target="_blank">Ver
+              Trailer</a>
+          </div>
+        </div>
+      </div>
+      <div class="trendBox">
+        <h4 class="trendTitle">#3</h4>
+        <div class="card cardStyle">
+          <img src="img/tendencias/better_call_saul.jpg" class="card-img-top fixed" alt="portada better call saul">
+          <div class="card-body">
+            <h5 class="card-title">Better call Saul</h5>
+            <a href="https://www.youtube.com/watch?v=jJ1SKlVzhss" class="btn btn-primary" target="_blank">Ver
+              Trailer</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <h3 class="dSection">Series</h3>
+    <div id="series" class="series">
+      <div id="carouselSeriesControls" class="carousel slide" data-ride="carousel">
+        <div class="carousel-inner">
+          <!-- Serie nro 1 -->
+          <div class="carousel-item active">
+            <a href="http://youtube.com" target="_blank"><img src="img/series/sliderWalking.jpg"
+                class="d-block w-100 imageCarousel" alt="Walking Dead"> </a>
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Walking dead</h5>
+            </div>
+          </div>
+          <!-- Serie nro 2 -->
+          <div class="carousel-item">
+            <a href="http://youtube.com" target="_blank"><img src="img/series/sliderGame.jpg"
+                class="d-block w-100 imageCarousel" alt="Walking Dead"> </a>
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Game of thrones</h5>
+            </div>
+          </div>
+          <!-- Serie nro 3 -->
+          <div class="carousel-item">
+            <a href="http://youtube.com" target="_blank"><img src="img/series/sliderBreaking.jpg"
+                class="d-block w-100 imageCarousel" alt="Walking Dead"></a>
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Breaking bad</h5>
+            </div>
+          </div>
+          <!-- Serie nro 4 -->
+          <div class="carousel-item">
+            <a href="http://youtube.com" target="_blank"><img src="img/series/sliderCasa.jpg"
+                class="d-block w-100 imageCarousel" alt="La casa de papel"></a>
+            <div class="carousel-caption d-none d-md-block">
+              <h5>La casa de papel</h5>
+            </div>
+          </div>
+          <!-- Serie nro 5 -->
+          <div class="carousel-item">
+            <a href="http://youtube.com" target="_blank"><img src="img/series/sliderFriends.jpg"
+                class="d-block w-100 imageCarousel" alt="Friends"> </a>
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Friends</h5>
+            </div>
+          </div>
+          <!-- Serie nro 6 -->
+          <div class="carousel-item">
+            <a href="http://youtube.com" target="_blank"><img src="img/series/sliderVisaVis.jpg"
+                class="d-block w-100 imageCarousel" alt="Vis a vis"> </a>
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Vis a vis</h5>
+            </div>
+          </div>
+          <!-- Serie nro 7 -->
+          <div class="carousel-item">
+            <a href="http://youtube.com" target="_blank"><img src="img/series/sliderSherlock.jpg"
+                class="d-block w-100 imageCarousel" alt="Sherlok"></a>
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Sherlok</h5>
+            </div>
+          </div>
+          <!-- Serie nro 8 -->
+          <div class="carousel-item">
+            <a href="http://youtube.com" target="_blank"><img src="img/series/sliderLost.jpg"
+                class="d-block w-100 imageCarousel" alt="Lost"></a>
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Lost</h5>
+            </div>
+          </div>
+        </div>
+        <a class="carousel-control-prev" href="#carouselSeriesControls" role="button" data-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="sr-only">Anterior</span>
+        </a>
+        <a class="carousel-control-next" href="#carouselSeriesControls" role="button" data-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="sr-only">Siguiente</span>
+        </a>
+      </div>
+    </div>
+    <h3 class="dSection">Películas</h3>
+    <div id="movies" class="series">
+      <div id="carouselMoviesControls" class="carousel slide" data-ride="carousel">
+        <div class="carousel-inner">
+          <!-- Pelicula nro 1 -->
+          <div class="carousel-item active">
+            <a href="http://youtube.com" target="_blank"><img src="img/movies/slider1917.jpg"
+                class="d-block w-100 imageCarousel" alt="1917"> </a>
+            <div class="carousel-caption d-none d-md-block">
+              <h5>1917</h5>
+            </div>
+          </div>
+          <!-- Pelicula nro 2 -->
+          <div class="carousel-item">
+            <a href="http://youtube.com" target="_blank"><img src="img/movies/sliderStar.jpg"
+                class="d-block w-100 imageCarousel" alt="Star wars"> </a>
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Star wars</h5>
+            </div>
+          </div>
+          <!-- Pelicula nro 3 -->
+          <div class="carousel-item">
+            <a href="http://youtube.com" target="_blank"><img src="img/movies/sliderCreed.jpg"
+                class="d-block w-100 imageCarousel" alt="Creed 2"></a>
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Creed 2</h5>
+            </div>
+          </div>
+          <!-- Pelicula nro 4 -->
+          <div class="carousel-item">
+            <a href="http://youtube.com" target="_blank"><img src="img/movies/sliderTerminator.jpg"
+                class="d-block w-100 imageCarousel" alt="Terminator"></a>
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Terminator dark fate</h5>
+            </div>
+          </div>
+          <!-- Pelicula nro 5 -->
+          <div class="carousel-item">
+            <a href="http://youtube.com" target="_blank"><img src="img/movies/sliderJoker.jpg"
+                class="d-block w-100 imageCarousel" alt="Joker"> </a>
+            <div class="carousel-caption d-none d-md-block">
+              <h3>Joker</h3>
+            </div>
+          </div>
+          <!-- Pelicula nro 6 -->
+          <div class="carousel-item">
+            <a href="http://youtube.com" target="_blank"><img src="img/movies/sliderOdisea.jpg"
+                class="d-block w-100 imageCarousel" alt="La odisea de los giles"> </a>
+            <div class="carousel-caption d-none d-md-block">
+              <h3>La odisea de los giles</h3>
+            </div>
+          </div>
+          <!-- Pelicula nro 7 -->
+          <div class="carousel-item">
+            <a href="http://youtube.com" target="_blank"><img src="img/movies/sliderRambo.jpg"
+                class="d-block w-100 imageCarousel" alt="Rambo last blood"></a>
+            <div class="carousel-caption d-none d-md-block">
+              <h3>Rambo last blood</h3>
+            </div>
+          </div>
+          <!-- Pelicula nro 8 -->
+          <div class="carousel-item">
+            <a href="http://youtube.com" target="_blank"><img src="img/movies/sliderFast.jpg"
+                class="d-block w-100 imageCarousel" alt="Rapidos y furiosos"></a>
+            <div class="carousel-caption d-none d-md-block">
+              <h3>Rápidos y furiosos 7</h3>
+            </div>
+          </div>
+        </div>
+        <a class="carousel-control-prev" href="#carouselMoviesControls" role="button" data-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="sr-only">Anterior</span>
+        </a>
+        <a class="carousel-control-next" href="#carouselMoviesControls" role="button" data-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="sr-only">Siguiente</span>
+        </a>
+      </div>
+    </div>
+    <h3 class="dSection">Contacto</h3>
+    <div id="contact" class="contact">
+      <div class="contactDescription">
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quibusdam explicabo dolorum libero ipsam ratione eius, nisi ullam at magnam possimus a assumenda laudantium dolore delectus veniam in rerum nobis dolorem quisquam fugit iste nostrum. Eum libero id dolor error voluptatum exercitationem quo ex deserunt fuga qui repudiandae, vitae, quod tempora.</p>
+      </div>
+      <div class="contacForm">
+      <form>
+        <div class="form-group" action="https://formspree.io/meqrnnel" method="POST">
+          <label for="exampleFormControlInput1 form-control-sm">Email</label>
+          <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+          <label for="exampleFormControlInput1 form-control-sm">Asunto</label>
+          <input class="form-control form-control-sm" type="text" placeholder="Asunto de la sugerencia">
+        </div>
+        <div class="form-group">
+          <label for="exampleFormControlTextarea1">Sugerencias/opiniones</label>
+          <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>          
+        </div>
+           <button type="submit" class="btn btn-primary">Enviar</button>
+      </form>
+     </div>
+      
+    </div>
+  
+  </main>
+
+
+  <footer>
+    <p>Leandro Caracca 2020</p>
+  </footer>
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+    integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>
