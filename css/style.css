@@ -33,6 +33,10 @@ footer{
     background: #212529;
     color: white;
     width: 100%;}
+
+header .bgNav{
+    background:#212529;
+}
     
 .dSection{
         display: flex;
