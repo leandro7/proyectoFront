@@ -97,6 +97,9 @@ footer{
             margin-left:0%;
             margin-right: 1%;            
 }
+
+
+
 .news .description{
     display: flex;
     flex-flow: row wrap;
