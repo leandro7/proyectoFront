@@ -1,15 +1,17 @@
 /* Estilo personalizado de la pagina  */
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;1,300&display=swap');
 
+/* Paletas de colores a utilizar Escala grises
+background: #2D4544; opcion 1  #2D4544 #728CA6  #F6FAF9 #CBE0EF #79C4FF */
+
+
 /*Propiedades generales del sitio */
+
 *{
     font-family: 'Roboto', sans-serif;
     margin: 0 auto;
     box-sizing: border-box;
 }
-
-/* Paletas de colores a utilizar Escala grises
-    /* background: #2D4544; opcion 1  #2D4544 #728CA6  #F6FAF9 #CBE0EF #79C4FF */
 
 body{
     display: flex;
@@ -17,14 +19,11 @@ body{
     background: #F6FAF9;    
 }
 header{
-    display: flex;
-    justify-content: space-between;
-    align-self: flex-start;
     background: #212529;
     color:white;
     width: 100%;
     position: fixed;
-    z-index: 1;
+    z-index: 11;
     }
 footer{
     display: flex;
@@ -34,17 +33,43 @@ footer{
     color: white;
     width: 100%;}
 
-header .bgNav{
-    background:#212529;
-}
-    
 .dSection{
         display: flex;
         align-self: center;
-        margin-top: 3%;
+        justify-content: center;
+        margin-top: 1%;
         margin-bottom: 3%;
-        width: auto;
+        width:100%;
 }   
+
+.description{
+    display: flex;
+    flex-flow: row wrap;
+    width: 40%;
+}
+
+/* Propiedades del header */
+
+.navSection{
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    justify-content: space-between;
+    width: 90%;
+    margin-left: 5%;
+    margin-right: 5%;
+
+}
+
+header .bgNav{
+    background:#212529;
+    margin-right: 0%;
+}
+
+header .logo {    
+    margin-left: 0%;
+}
+
  /* Propiedades del contenedor principal de la pagina*/
  .principal{
     display: flex;
@@ -74,7 +99,8 @@ header .bgNav{
 
 .principal .series{
     display: flex;
-    flex-flow: row;
+    flex-flow: row nowrap;
+    align-items: stretch;
     width: 90%;
     margin-left: 5%;
     margin-right: 5%;
@@ -83,11 +109,11 @@ header .bgNav{
 .principal .contact{
     display: flex;
     flex-flow: row nowrap;
-    align-items: center;
+    align-items: stretch;
     width: 90%;
     margin-left: 5%;
     margin-right: 5%;
-    margin-bottom: 3%;
+    margin-bottom: 2%;
 
 }
 
@@ -102,19 +128,10 @@ header .bgNav{
             margin-right: 1%;            
 }
 
-
-
-.news .description{
-    display: flex;
-    flex-flow: row wrap;
-    width: 40%;
-}
 .description .list{
         display: flex;
         padding-left: 0px;
-        
-
-}
+ }
 
 .list li {
     display: block;
@@ -155,18 +172,10 @@ header .bgNav{
 
 /*Propiedades de la seccion contacto*/
 
- .contact .contacForm{
+.contact .contacForm{
     width: 50%;
 }
 
- .contact .contactDescription{
-        display: flex;
-        align-self: center;
-        width: 40%;
-        margin-left: 5%;
-        margin-right: 5%;
-
-}
 
 /*Web responsive para celulares*/
 @media all and (max-width:768px){
@@ -175,7 +184,6 @@ header .bgNav{
 .principal {
         display: flex;
         flex-flow: column wrap;
-
 }
 
 /*Propiedades de la seccion news*/
@@ -262,6 +270,3 @@ header .bgNav{
 }
 
 /*Web responsive para tablets*/
-@media all and (min-width:768px) and (max-width:992px){
-
-}
