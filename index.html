@@ -15,16 +15,36 @@
 <body>
   <header>
     <h3>PelisMas</h3>
-    <!-- nav modo mobile -->
-    <!-- nav modo desktop -->
-    <nav class="nav nav-pills flex-column flex-sm-row mediaDesktop">     
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <a class="navbar-brand" href="#">Navbar</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item active">
+            <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Features</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Pricing</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+   <!--  <nav class="nav nav-pills flex-column flex-sm-row">     
       <a class="flex-sm-fill text-sm-center nav-link active" href="#news">Novedades</a>
       <a class="flex-sm-fill text-sm-center nav-link" href="#trends">Tendencias</a>
       <a class="flex-sm-fill text-sm-center nav-link" href="#series">Series</a>
       <a class="flex-sm-fill text-sm-center nav-link" href="#movies">Películas</a>
       <a class="flex-sm-fill text-sm-center nav-link" href="#contact">Contacto</a>
-    </nav>
-  </header>
+    </nav> -->  
   <main class="principal">
     <h1 class="dSection">Ultimas tendencias en series y películas</h1>
     <div id="news" class="news">
@@ -46,8 +66,8 @@
         </ul>
       </div>
     </div>
-    <h3 class="dSection" id="trends">Tendencias</h3>
-    <div class="trends">
+    <h3 class="dSection">Tendencias</h3>
+    <div class="trends" id="trends">
       <div class="trendBox">
         <h4 class="trendTitle">#1</h4>
         <div class="card cardStyle">
