@@ -1,5 +1,7 @@
 /* Estilo personalizado de la pagina  */
-@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;1,300&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;1,300&display=swap'); */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@600&display=swap');
 
 /* Paletas de colores a utilizar Escala grises
 background: #2D4544; opcion 1  #2D4544 #728CA6  #F6FAF9 #CBE0EF #79C4FF */
@@ -28,10 +30,13 @@ header{
 footer{
     display: flex;
     align-self: flex-end;
-    justify-content: center;
     background: #212529;
     color: white;
-    width: 100%;}
+    width: 100%;
+    height: 45px;
+}
+
+p{color:#495057}
 
 .dSection{
         display: flex;
@@ -40,6 +45,7 @@ footer{
         margin-top: 1%;
         margin-bottom: 3%;
         width:100%;
+        font-family: 'Open Sans', sans-serif;
 }   
 
 .description{
@@ -129,13 +135,12 @@ header .logo {
 }
 
 .description .list{
-        display: flex;
-        padding-left: 0px;
+        display: inline-flex;
  }
 
-.list li {
-    display: block;
+ .list li {
     padding: 5px;
+    color:#3b5bdb;
     
 }
 
@@ -169,7 +174,6 @@ header .logo {
     width: auto;
     height: 35vw;            
 }
-
 /*Propiedades de la seccion contacto*/
 
 .contact .contacForm{
@@ -178,6 +182,10 @@ header .logo {
     padding-right: 3%;
 }
 
+.buttonDisplay{
+                align-self: center;
+
+}
 
 /*Web responsive para celulares*/
 @media all and (max-width:768px){
