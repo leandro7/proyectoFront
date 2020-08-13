@@ -121,7 +121,6 @@ header .logo {
     margin-left: 5%;
     margin-right: 5%;
     margin-bottom: 2%;
-
 }
 
 /* Propiedades de la seccion nuevo */
@@ -166,14 +165,12 @@ header .logo {
 
 .fixed{    
         width: 100%;
-        object-fit: cover;
         height: 600px;
     }
 
 /*Propiedades de la seccion series y peliculas*/
 .imageCarousel{
-    max-width: 100%;
-    width: auto;
+    width: 100%;
     height: 35vw;            
 }
 /*Propiedades de la seccion contacto*/
@@ -184,10 +181,7 @@ header .logo {
     padding-right: 3%;
 }
 
-.buttonDisplay{
-                align-self: center;
 
-}
 
 /*Web responsive para celulares*/
 @media all and (max-width:768px){
@@ -198,7 +192,13 @@ header .logo {
     padding: 5%;
     margin: 0%;
 }
-
+.description{
+    flex-flow: row wrap;
+    align-content: center;
+    width: 90%;
+    margin-left: 5%;
+    margin-right: 5%;
+}
 
 /*Propiedades del contenedor principal  */
 .principal {
@@ -220,15 +220,6 @@ header .logo {
         width: 90%;
         margin-left: 5%;
         margin-right: 5%;
-
-}
-
-.news .description{
-    flex-flow: row wrap;
-    align-content: center;
-    width: 90%;
-    margin-left: 5%;
-    margin-right: 5%;
 }
 
 /* Propiedades de la seccion trends */
@@ -252,13 +243,17 @@ header .logo {
     margin-top: 1%;
     margin-bottom: 3%;
 }
+
+.fixed{
+        max-width: 100%;
+        width: auto;
+
+}
 /* Pripiedades para la seccion series y peliculas */
 
-
-
-
-
-
+.imageCarousel{
+    height: 250px;
+}
 
 /* Propiedades para la seccion contacto */
 
@@ -266,13 +261,19 @@ header .logo {
 .principal .contact{
     display: flex;
     flex-flow: column wrap;
-
+    width: 100%;
+    margin-left: 0%;
+    margin-right: 0%;
 }
 
-.contactDescription{
-        display: flex;
-        align-self: flex-start;
-
+.contact .contacForm{
+    width: 90%;
+    padding-left: 0%;
+    padding-right: 0%;
+    margin-left: 5%;
+    margin-right: 5%;
 }
+
+
 
 /*Web responsive para tablets*/
