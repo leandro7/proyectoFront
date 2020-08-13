@@ -1,5 +1,4 @@
 /* Estilo personalizado de la pagina  */
-/* @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;1,300&display=swap'); */
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@600&display=swap');
 
@@ -36,7 +35,9 @@ footer{
     height: 45px;
 }
 
-p{color:#495057}
+p{
+    color:#495057
+}
 
 .dSection{
         display: flex;
@@ -140,8 +141,7 @@ header .logo {
 
  .list li {
     padding: 5px;
-    color:#3b5bdb;
-    
+    color:#3b5bdb;    
 }
 
 .image{
@@ -160,7 +160,9 @@ header .logo {
 .trendTitle{
     display: flex;
     align-self: center;
-    margin-bottom: 4%;}
+    margin-top: 4%;
+
+}
 
 .fixed{    
         width: 100%;
@@ -190,10 +192,18 @@ header .logo {
 /*Web responsive para celulares*/
 @media all and (max-width:768px){
 
+/* Propiedades generales del sitio para mobile */
+
+.dSection{
+    padding: 5%;
+    margin: 0%;
+}
+
+
 /*Propiedades del contenedor principal  */
 .principal {
-        display: flex;
         flex-flow: column wrap;
+        margin-top: 10%;
 }
 
 /*Propiedades de la seccion news*/
@@ -202,30 +212,23 @@ header .logo {
     flex-flow: column wrap;
     align-content: center;
     width: 100%;
+    margin-left: 0%;
+    margin-right: 0%;
 }
 
 .news .movie{
-        width: 80%;
-        margin-left: 10%;
-        margin-right: 10%;
+        width: 90%;
+        margin-left: 5%;
+        margin-right: 5%;
 
 }
 
 .news .description{
     flex-flow: row wrap;
     align-content: center;
-    width: 80%;
-    margin-left: 10%;
-    margin-right: 10%;
-}
-
-
-.description .list{
-    display: flex;
-    padding-left: 0px;
-    align-self: flex-start;
-    
-
+    width: 90%;
+    margin-left: 5%;
+    margin-right: 5%;
 }
 
 /* Propiedades de la seccion trends */
@@ -233,39 +236,32 @@ header .logo {
 .principal .trends{
 
     flex-flow: column wrap;
-    width: 80%;
-    margin-left: 10%;
-    margin-right: 10%;
-    align-content: center;
+    width: 100%;
+    margin-left: 0%;
+    margin-right: 0%;
 }
 
 .trendBox{
     display: flex;
     flex-flow: column wrap;
-    width: 100%;
+    width: 90%;
+    margin-right: 5%;
+    margin-left: 5%;
 }
-
-.trendBox .cardStyle{
-    width: 100%;
+.trendTitle{
+    margin-top: 1%;
+    margin-bottom: 3%;
 }
+/* Pripiedades para la seccion series y peliculas */
 
-.cardMobile {
 
-    width: 100%;
-}
 
-.fixed {
 
-    height: 75%;
 
-}
-/*  */
-.controlMenu{   
 
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
+
+/* Propiedades para la seccion contacto */
+
 
 .principal .contact{
     display: flex;
