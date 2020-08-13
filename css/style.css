@@ -153,7 +153,7 @@ header .logo {
 .trendBox{
     display: flex;
     flex-flow: column wrap;
-    width: 34%;
+    width: 33%;
 }
 
 .trendTitle{
