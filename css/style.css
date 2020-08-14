@@ -1,94 +1,109 @@
 /* Estilo personalizado de la pagina  */
-@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;1,300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@600&display=swap');
+
+/* Paletas de colores a utilizar Escala grises*/
+
 
 /*Propiedades generales del sitio */
+
 *{
     font-family: 'Roboto', sans-serif;
     margin: 0 auto;
-    box-sizing: border-box;
+    box-sizing: border-box;    
 }
-
-/* Paletas de colores a utilizar Escala grises
-    /* background: #2D4544; opcion 1  #2D4544 #728CA6  #F6FAF9 #CBE0EF #79C4FF */
 
 body{
     display: flex;
-    flex-flow: row wrap;
-    background: #F6FAF9;    
+    flex-flow: row wrap; 
 }
 header{
-    display: flex;
-    justify-content: space-between;
-    align-self: flex-start;
     background: #212529;
     color:white;
     width: 100%;
     position: fixed;
-    z-index: 1;
+    z-index: 11;
     }
 footer{
     display: flex;
     align-self: flex-end;
-    justify-content: center;
     background: #212529;
     color: white;
-    width: 100%;}
-    
-.dSection{
+    width: 100%;
+    height: 45px;
+}
+
+p{
+    color:#212529;
+} 
+
+li{
+    padding: 5px;
+    font-size: 1.2em; 
+}
+
+
+.divSection{
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: stretch;
+    width: 90%;
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-bottom: 2%;
+}   
+
+.titleProperty{
         display: flex;
         align-self: center;
-        margin-top: 3%;
+        justify-content: center;
+        margin-top: 1%;
         margin-bottom: 3%;
-        width: auto;
+        width:100%;
+        font-family: 'Open Sans', sans-serif;
 }   
+
+.description{
+    display: flex;
+    flex-flow: column wrap;
+    width: 40%;
+}
+.imageLogo{
+    width: 2em;
+    height: 2em;
+}
+/* Propiedades del header */
+
+.navSection{
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    justify-content: space-between;
+    width: 90%;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+header .bgNav{
+    background:#212529;
+    margin-right: 0%;
+    padding-right: 0%;
+}
+
+header .logo {    
+    margin-left: 0%;
+}
+
  /* Propiedades del contenedor principal de la pagina*/
  .principal{
     display: flex;
     flex-flow: row wrap;
     margin-top: 4%;
     width: 100%;
-    background: white;
+    background:#f8f9fa;
 } 
-.principal .news{
-            display: flex;
-            flex-flow: row nowrap;
-            align-items: stretch;
-            width: 90%;
-            margin-left: 5%;
-            margin-right: 5%;
-            margin-bottom: 2%;
-}   
-.principal .trends{
-    display: flex;
-    flex-flow: row nowrap ;
-    align-items: stretch;
-    width: 90%;
-    margin-left: 5%;
-    margin-right: 5%;
-    margin-bottom: 2%;
-}
-
-.principal .series{
-    display: flex;
-    flex-flow: row;
-    width: 90%;
-    margin-left: 5%;
-    margin-right: 5%;
-    margin-bottom: 2%;
-}
-.principal .contact{
-    display: flex;
-    flex-flow: row nowrap;
-    align-items: center;
-    width: 90%;
-    margin-left: 5%;
-    margin-right: 5%;
-    margin-bottom: 3%;
-
-}
-
 /* Propiedades de la seccion nuevo */
-.news .movie{
+.divSectionImg{
             display: flex;
             flex-flow: column;
             justify-content: center;
@@ -98,27 +113,11 @@ footer{
             margin-right: 1%;            
 }
 
-
-
-.news .description{
-    display: flex;
-    flex-flow: row wrap;
-    width: 40%;
-}
 .description .list{
-        display: flex;
-        padding-left: 0px;
-        
+        display: inline-flex;
+ }
 
-}
-
-.list li {
-    display: block;
-    padding: 5px;
-    
-}
-
-.image{
+.imageMovie{
     width: 100%;
     height: 100%;     
 }
@@ -128,143 +127,117 @@ footer{
 .trendBox{
     display: flex;
     flex-flow: column wrap;
-    width: 34%;
+    width: 33%;
 }
 
-.trendTitle{
+.trendBoxTitle{
     display: flex;
     align-self: center;
-    margin-bottom: 4%;}
+    margin-top: 4%;
+
+}
 
 .fixed{    
         width: 100%;
-        object-fit: cover;
         height: 600px;
     }
 
 /*Propiedades de la seccion series y peliculas*/
 .imageCarousel{
-    max-width: 100%;
-    width: auto;
+    width: 100%;
     height: 35vw;            
 }
-
 /*Propiedades de la seccion contacto*/
 
- .contact .contacForm{
+.contactForm{
     width: 50%;
-}
-
- .contact .contactDescription{
-        display: flex;
-        align-self: center;
-        width: 40%;
-        margin-left: 5%;
-        margin-right: 5%;
-
+    padding-left: 3%;
+    padding-right: 3%;
 }
 
 /*Web responsive para celulares*/
 @media all and (max-width:768px){
 
-/*Propiedades del contenedor principal  */
-.principal {
-        display: flex;
-        flex-flow: column wrap;
+/* Propiedades generales del sitio para mobile */
 
+.titleProperty{
+    padding: 5%;
+    margin: 0%;
+}
+.description{
+
+    align-content: center;
+    justify-content: center;
+    width: 90%;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+.divSection{
+    flex-flow: column wrap;
+    width: 100%;
+    margin-left: 0%;
+    margin-right: 0%;
+}
+
+
+/*Propiedades del contenedor principal  */
+.principal{
+        flex-flow: column wrap;
+        margin-top: 10%;
 }
 
 /*Propiedades de la seccion news*/
 
-.principal .news{
-    flex-flow: column wrap;
+.divSectionMobileNews{
     align-content: center;
-    width: 100%;
 }
-
-.news .movie{
-        width: 80%;
-        margin-left: 10%;
-        margin-right: 10%;
-
-}
-
-.news .description{
-    flex-flow: row wrap;
-    align-content: center;
-    width: 80%;
-    margin-left: 10%;
-    margin-right: 10%;
-}
-
-
-.description .list{
-    display: flex;
-    padding-left: 0px;
-    align-self: flex-start;
-    
-
+.divSectionImg{
+        width: 90%;
+        margin-left: 5%;
+        margin-right: 5%;
 }
 
 /* Propiedades de la seccion trends */
 
-.principal .trends{
-
-    flex-flow: column wrap;
-    width: 80%;
-    margin-left: 10%;
-    margin-right: 10%;
-    align-content: center;
-}
-
 .trendBox{
     display: flex;
     flex-flow: column wrap;
-    width: 100%;
+    width: 90%;
+    margin-right: 5%;
+    margin-left: 5%;
+}
+.trendBoxTitle{
+    margin-top: 1%;
+    margin-bottom: 3%;
 }
 
-.trendBox .cardStyle{
-    width: 100%;
-}
-
-.cardMobile {
-
-    width: 100%;
-}
-
-.fixed {
-
-    height: 75%;
+.fixed{
+        max-width: 100%;
+        width: auto;
 
 }
-/*  */
-.controlMenu{   
+/* Pripiedades para la seccion series y peliculas */
 
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.principal .contact{
-    display: flex;
-    flex-flow: column wrap;
+.fixSectionMobile{
+        width: 90%;
+        margin-right: 5%;
+        margin-left: 5%;
 
 }
 
-.contactDescription{
-        display: flex;
-        align-self: flex-start;
-
+.imageCarousel{
+    height: 250px;
 }
 
-/* propiedades del menu desplegable */
-
-
-
-/*  */
-
+/* Propiedades para la seccion contacto */
+.contactForm{
+    width: 90%;
+    padding-left: 0%;
+    padding-right: 0%;
+    margin-left: 5%;
+    margin-right: 5%;
 }
+/* este comentario */
+
 /*Web responsive para tablets*/
-@media all and (min-width:768px) and (max-width:992px){
-
-}
