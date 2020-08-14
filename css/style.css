@@ -213,8 +213,7 @@ header .logo {
 }
 
 .fixed{
-        max-width: 100%;
-        width: auto;
+        width: 100%;
 
 }
 /* Pripiedades para la seccion series y peliculas */
