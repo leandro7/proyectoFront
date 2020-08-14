@@ -4,17 +4,22 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- CSS personalizado -->
+  <link rel="stylesheet" href="css/style.css">
   <!-- Bootstrap CSS -->
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
     integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
-  <!-- CSS personalizado -->
-  <link rel="stylesheet" href="css/style.css">
   <title>PelisMas</title>
+  <link rel="shortcut icon" href="/img/icons/Designbolts-Free-Multimedia-Film.ico" type="image/x-icon">
 </head>
-<body>
+<body id="index">
   <header>
     <div class="navSection">
-    <div class="logo">ACA VA UN LOGO</div>
+    <div class="logo">
+     <a href="#index">
+      <img class="imageLogo"src="/img/icons/Designbolts-Free-Multimedia-Film.ico" alt="logo">
+     </a>
+    </div>
     <nav class="navbar navbar-expand-lg navbar-dark bgNav" >
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
@@ -42,62 +47,62 @@
     </div>
   </header>
   <main class="principal">
-    <h1 class="dSection display-4">Ultimas tendencias en series y películas</h1>
-    <div id="news" class="news">
-      <div class="movie">
-        <img src="img/novedades/el_robo.jpg" class="image" alt="el robo del siglo">
+    <h1 class="titleProperty display-4">Ultimas tendencias en series y películas</h1>
+    <div id="news" class="divSection divSectionMobileNews">
+      <div class="divSectionImg">
+       <a href=""></a> <img src="img/novedades/el_robo.jpg"class="imageMovie" alt="el robo del siglo">
       </div>
       <div class="description">
         <h4 class="font-weight-bold">El Robo del siglo</h4>
           <p class="text-secondary font-italic">La primera gran película nacional del año tiene las dosis exactas de género y argentinismos como para robar los corazones de los espectadores. Después de todo, es “solo plata, no amores”.<br>         
           <a href="https://www.infobae.com/teleshow/en-cartel/2020/01/16/analisis-de-el-robo-del-siglo-una-fusion-de-thriller-light-y-comedia-costumbrista-llena-de-argentinismos/" target="_blank">Alexis Puig</a> .</p>   
 
-        <p class="">Basado en una historia real, del robo de la sucursal del Banco Río de la localidad bonaerense de Acassuso el 13 de enero de 2006,la cual fue asaltada por una banda de seis ladrones armados con armas de juguete.Tomaron 23 rehenes y se llevaron 15 millones de dólares de 147 cajas de seguridad que abandonaron posteriormente tras la huida.​</p>
+        <p>Basado en una historia real, del robo de la sucursal del Banco Río de la localidad bonaerense de Acassuso el 13 de enero de 2006,la cual fue asaltada por una banda de seis ladrones armados con armas de juguete.Tomaron 23 rehenes y se llevaron 15 millones de dólares de 147 cajas de seguridad que abandonaron posteriormente tras la huida.​</p>
         <ul class=" list list-unstyled">
-          <li>Policial</li>
-          <li>Atrapante</li>
-          <li>Real</li>
+          <li><i class="fas fa-check"></i>Policial</li>
+          <li><i class="fas fa-check"></i>Atrapante</li>
+          <li><i class="fas fa-check"></i>Real</li>
         </ul>
       </div>
     </div>
-    <h3 class="dSection ">Tendencias</h3>
-    <div class="trends" id="trends">
+    <h3 class="titleProperty">Tendencias</h3>
+    <div class="divSection" id="trends">
       <div class="trendBox">
-        <h4 class="trendTitle font-weight-bold">#1</h4>
+        <h4 class="trendBoxTitle font-weight-bold">#1</h4>
         <div class="card">
           <img src="img/tendencias/dark.jpg" class="card-img-top fixed" alt="portada dark">
           <div class="card-body">
             <h5 class="card-title text-center">Dark</h5>
-            <a href="https://www.youtube.com/watch?v=z2wPBG-GSJ0" class="btn btn-primary " target="_blank">Ver
+            <a href="https://www.youtube.com/watch?v=z2wPBG-GSJ0" class="btn btn-dark" target="_blank">Ver
               Trailer</a>
           </div>
         </div>
       </div>
       <div class="trendBox">
-        <h4 class="trendTitle font-weight-bold">#2</h4>
+        <h4 class="trendBoxTitle font-weight-bold">#2</h4>
         <div class="card">
           <img src="img/tendencias/vikingos.jpg" class="card-img-top fixed" alt="portada vikingos">
           <div class="card-body">
             <h5 class="card-title text-center">Vikingos</h5>
-            <a href="https://www.youtube.com/watch?v=R2glA8Ik2dM" class="btn btn-primary" target="_blank">Ver
+            <a href="https://www.youtube.com/watch?v=R2glA8Ik2dM" class="btn btn-dark" target="_blank">Ver
               Trailer</a>
           </div>
         </div>
       </div>
       <div class="trendBox">
-        <h4 class="trendTitle font-weight-bold">#3</h4>
+        <h4 class="trendBoxTitle font-weight-bold">#3</h4>
         <div class="card">
           <img src="img/tendencias/better_call_saul.jpg" class="card-img-top fixed" alt="portada better call saul">
           <div class="card-body">
             <h5 class="card-title text-center">Better call Saul</h5>
-            <a href="https://www.youtube.com/watch?v=jJ1SKlVzhss" class="btn btn-primary" target="_blank">Ver
+            <a href="https://www.youtube.com/watch?v=jJ1SKlVzhss" class="btn btn-dark" target="_blank">Ver
               Trailer</a>
           </div>
         </div>
       </div>
     </div>
-    <h3 class="dSection">Series</h3>
-    <div id="series" class="series">
+    <h3 class="titleProperty">Series</h3>
+    <div id="series" class="divSection fixSectionMobile">
       <div id="carouselSeriesControls" class="carousel slide" data-ride="carousel">
         <div class="carousel-inner">
           <!-- Serie nro 1 -->
@@ -175,8 +180,8 @@
         </a>
       </div>
     </div>
-    <h3 class="dSection">Películas</h3>
-    <div id="movies" class="series">
+    <h3 class="titleProperty">Películas</h3>
+    <div id="movies" class="divSection fixSectionMobile">
       <div id="carouselMoviesControls" class="carousel slide" data-ride="carousel">
         <div class="carousel-inner">
           <!-- Pelicula nro 1 -->
@@ -254,13 +259,34 @@
         </a>
       </div>
     </div>
-    <h3 class="dSection">Contacto</h3>
-    <div id="contact" class="contact">
+    <h3 class="titleProperty">Contacto</h3>
+    <div id="contact" class="divSection">
       <div class="description">
-        <h4 class="font-weight-bold">Sobre nosotros</h4>
-        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quibusdam explicabo dolorum libero ipsam ratione eius, nisi ullam at magnam possimus a assumenda laudantium dolore delectus veniam in rerum nobis dolorem quisquam fugit iste nostrum. Eum libero id dolor error voluptatum exercitationem quo ex deserunt fuga qui repudiandae, vitae, quod tempora.</p>
+        <h5 class="font-weight-bold">Sobre nosotros</h5>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic modi atque sit, optio quia iusto voluptas nemo debitis repellat delectus saepe in nostrum facilis officia. Iure sit debitis voluptas aliquid.</p>
+        <h5 class="font-weight-bold text text-center">Nuestras Redes</h5>
+        <ul class="list-unstyled">          
+          <li>
+              <i class="fab fa-mailchimp"></i>
+              <a href="http://https://mail.google.com"target="_blank">
+              <span>pelismas@pelismas.com</span></a>
+          </li>
+          <li>
+              <i class="fab fa-twitter text-primary"></i>
+              <a href="https://twitter.com" target="_blank">
+              <span>@pelisMas</span></a>
+          </li>
+          <li>
+              <i class="fab fa-facebook-f" style="color:#3b5998"></i>
+              <a href="https://facebook.com" target="_blank">
+              <span>Pelis Mas</span></a></li>              
+          <li>
+            <i class="fab fa-instagram fa-1x" style="color:#C13584"></i>
+            <a href="https://instagram.com" target="_blank">
+            <span>pelismas@pelismas.com</span></a></li>
+        </ul>  
       </div>
-      <div class="contacForm">
+      <div class="contactForm">
       <form action="https://formspree.io/meqrnnel" method="POST">
         <div class="form-group" >
           <label for="email">E-mail:</label>
@@ -272,7 +298,8 @@
           </div>       
         <div class="form-group">
           <label for="suggestions">Sugerencias/opiniones:</label>
-          <textarea class="form-control" id="suggestions" rows="3"></textarea>          
+          <textarea class="form-control" id="suggestions" rows="3" placeholder="Ingrese su suguerencia aquí">
+          </textarea>          
         </div>
         <div class="form-check form-group">
           <input class="form-check-input" type="checkbox" value="" id="check" checked>
@@ -286,8 +313,9 @@
      </div>      
     </div>  
   </main>
-  <footer>
-    <p class="text-center" style="margin-top: 10px; margin-bottom: 10px; color:white;">Leandro Caracca 2020</p>
+  <footer></footer>
+    <p class="text-center" style="margin-top: 10px; margin-bottom: 10px; color:white;">
+      Leandro Caracca 2020</p>
   </footer>
   <!-- jQuery first, then Popper.js, then Bootstrap JS -->
   <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
@@ -299,6 +327,7 @@
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
     integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
     crossorigin="anonymous"></script>
+    <!-- Iconos de font awesome -->
+    <script src="https://kit.fontawesome.com/93926d829f.js" crossorigin="anonymous"></script>
 </body>
-
 </html>
